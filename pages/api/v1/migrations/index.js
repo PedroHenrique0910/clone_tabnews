@@ -8,7 +8,7 @@ export default async function migrations(request, response) {
 
   if (!allowedMethods.includes(request.method)) {
     return response.status(405).json({
-      error: `Method "${request.method}" not allowed`,
+      error: `Method "${request.method}" not allowed `,
     });
   }
 
